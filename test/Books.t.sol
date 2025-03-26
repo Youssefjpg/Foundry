@@ -16,7 +16,7 @@ contract BooksTest is Test {
         assertEq(b.title, "Programming Foundry");
     }
 
-    function test_update_pages() public {
+    function test_Updatepages() public {
         books.update_pages(120);
         Books.Book memory b = books.get_book();
         assertEq(b.pages, 120);
